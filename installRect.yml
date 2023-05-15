@@ -1,0 +1,10 @@
+- name: Install Rectangle from Homebrew
+  hosts: localhost
+  become: true
+  tasks:
+
+    - name: Install Rectangle with Homebrew
+      community.general.homebrew:
+        name: rectangle
+        state: present
+      become: true
